@@ -95,7 +95,7 @@ h3.clr {
 }
 .header-top{
     position: absolute;
-    top: 35px;
+    top: 0px;
     z-index: 99;
     left: 0px;
     width: 100%;
@@ -198,9 +198,9 @@ a.navbar-brand i{
 /*-- //header --*/ 
 /*-- banner --*/ 
 
-.wthree-oneimg{  background: url(../images/b1.jpg)no-repeat center;}
-.wthree-twoimg{  background: url(../images/b2.jpg)no-repeat center;}
-.wthree-threeimg{  background: url(../images/b3.jpg)no-repeat center;} 
+.wthree-oneimg{  background: url(../images/c1.jpg)no-repeat center;}
+.wthree-twoimg{  background: url(../images/c2.jpg)no-repeat center;}
+.wthree-threeimg{  background: url(../images/c3.jpg)no-repeat center;} 
 .slider-img{  background-size: cover;
     min-height: 800px;}  
 .rslides {

@@ -37,7 +37,9 @@ class YiiNewsController extends Controller
     {
         $searchModel = new YiiNewsSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-
+        //添加
+        $this->layout = 'mainsub'; 
+        //添加完成
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,

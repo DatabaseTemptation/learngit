@@ -29,7 +29,7 @@ AppAsset::register($this);
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandLabel' => Yii::$app->name,
+        'brandLabel' => '南开大学建校100周年',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
@@ -39,17 +39,14 @@ AppAsset::register($this);
         ['label' => 'Home', 'url' => ['/site/index']],
         // ['label' => 'About', 'url' => ['/site/about']],
         // ['label' => 'Contact', 'url' => ['/site/contact']],
-        ['label' => '开发人员', 'url' => ['/yii-developer/index']],
-        ['label' => '捐款致谢', 'url' => ['/yii-donation/index']],
-        ['label' => '新闻', 'url' => ['/yii-news/index']],
+        ['label' => '人物南开', 'url' => ['/yii-person/index']],
+        ['label' => '活动预告', 'url' => ['/yii-activity/index']],
+        ['label' => '校庆新闻', 'url' => ['/yii-news/index']],
         ['label' => '人物', 'url' => ['/yii-person/index']],
         ['label' => '南开史苑', 'url' => ['/yii-history/index']],
         ['label' => '杰出事迹', 'url' => ['/yii-story/index']],
         ['label' => '评论', 'url' => ['/yii-comment/index']],
-        ['label' => '单位', 'url' => ['/yii-organization/index']],
-        ['label' => '工作人员', 'url' => ['/yii-worker/index']],
-        ['label' => '活动', 'url' => ['/yii-activity/index']],
-        ['label' => '负责', 'url' => ['/yii-responsible/index']],
+        
     ];
     if (Yii::$app->user->isGuest) {
         $menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
@@ -71,7 +68,7 @@ AppAsset::register($this);
     NavBar::end();
     ?>
 
-    <div class="container">
+    <div class="container" >
         <?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]) ?>

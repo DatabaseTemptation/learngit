@@ -10,7 +10,7 @@ use yii\widgets\Breadcrumbs;
 use frontend\assets\AppAsset;
 use common\widgets\Alert;
 
-AppAsset::register($this);
+// AppAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -24,64 +24,21 @@ AppAsset::register($this);
     <?php $this->head() ?>
 </head>
 
-<!-- <body>
+<body>
 <?php $this->beginBody() ?>
-<div class="wrap">
-    <?php
-    NavBar::begin([
-        'brandLabel' => Yii::$app->name,
-        'brandUrl' => Yii::$app->homeUrl,
-        'options' => [
-            'class' => 'navbar-inverse navbar-fixed-top',
-        ],
-    ]);
-    $menuItems = [
-        ['label' => 'Home', 'url' => ['/site/index']],
-        // ['label' => 'About', 'url' => ['/site/about']],
-        // ['label' => 'Contact', 'url' => ['/site/contact']],
-        ['label' => '开发人员', 'url' => ['/yii-developer/index']],
-        ['label' => '捐款致谢', 'url' => ['/yii-donation/index']],
-        ['label' => '新闻', 'url' => ['/yii-news/index']],
-        ['label' => '人物', 'url' => ['/yii-person/index']],
-        ['label' => '南开史苑', 'url' => ['/yii-history/index']],
-        ['label' => '杰出事迹', 'url' => ['/yii-story/index']],
-        ['label' => '评论', 'url' => ['/yii-comment/index']],
-        ['label' => '单位', 'url' => ['/yii-organization/index']],
-        ['label' => '工作人员', 'url' => ['/yii-worker/index']],
-        ['label' => '活动', 'url' => ['/yii-activity/index']],
-        ['label' => '负责', 'url' => ['/yii-responsible/index']],
-    ];
-    if (Yii::$app->user->isGuest) {
-        $menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
-        $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
-    } else {
-        $menuItems[] = '<li>'
-            . Html::beginForm(['/site/logout'], 'post')
-            . Html::submitButton(
-                'Logout (' . Yii::$app->user->identity->username . ')',
-                ['class' => 'btn btn-link logout']
-            )
-            . Html::endForm()
-            . '</li>';
-    }
-    Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-right'],
-        'items' => $menuItems,
-    ]);
-    NavBar::end();
-    ?>
 
-    <div class="container">
-        <?= Breadcrumbs::widget([
+<div class="wrap">
+    <div>
+        <!-- <?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-        ]) ?>
+        ]) ?> -->
         <?= Alert::widget() ?>
         <?= $content ?>
     </div>
 </div>
 
 <?php $this->endBody() ?>
-</body> -->
+</body>
 
 </html>
 <?php $this->endPage() ?>

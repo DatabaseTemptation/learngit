@@ -37,7 +37,7 @@ class YiiActivityController extends Controller
     {
         $searchModel = new YiiActivitySearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-
+        $this->layout = "mainsub";
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,

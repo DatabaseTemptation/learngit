@@ -8,12 +8,6 @@ use yii\helpers\Url;
 
 <head>
     <title>轮播图</title>
-    <style>
-        .slider-info{
-            width:100px;
-            height:300px;
-        }
-    </style>
     <!--meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -44,20 +38,18 @@ use yii\helpers\Url;
     <div class="header-top">
         <div class="header-bar">
             <nav class="navbar navbar-default">
-                <div class="navbar-header navbar-left">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <div class="collapse navbar-collapse navbar-left">
+                    <nav>
+                        <ul class="nav navbar-nav">
+                            <li><a class="scroll" href="../web/index.php" style="font-size: 25px;">南开大学建校100周年</a></li>
+                        </ul>
+                    </nav>
+                    <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
-                    </button>
-                    <style>
-                        span {
-                            color: yellow;
-                            font-size: 20px;
-                        }
-                    </style>
-                    <h1><a class="navbar-brand" href="../web/index.php"><span>南开大学建校100周年</span></a></h1>
+                    </button> -->
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
@@ -71,36 +63,43 @@ use yii\helpers\Url;
                             <li><a href="#contact" class="scroll">捐款致谢</a></li>
                             <li><a href="#newsletter" class="scroll">登录(注册)</a></li>
                         </ul>
-
                     </nav>
                 </div>
             </nav>
         </div>
         <div class="clearfix"> </div>
     </div>
-    
 	<!--//header-->
     <!-- Slideshow 4 -->
     <div class="slider">
         <div class="callbacks_container">
             <ul class="rslides" id="slider4">
                 <li>
-                    <img id = "luobotu" src ="../web/statics/images/c1.jpg" width = "100%" height = "100%"/>       
-                </li>
-                <li>
-                    <img id = "luobotu" src ="../web/statics/images/c2.jpg" width = "100%" height = "100%"/>   
-                </li>
-                <li>
-                    <div class="slider-img wthree-threeimg">
+                    <div class="slider-img wthree-oneimg">
                         <div class="container">
-                            <div class="slider-info">
-                            <img id = "luobotu" src ="../web/statics/images/c3.jpg" width = "100%" height = "100%"/>
-                            </div>
+                            <!-- <div class="slider-info">
+                                <h4>PLANS</h4>
+                            </div> -->
                         </div>
                     </div>
                 </li>
                 <li>
-                    <img id = "luobotu" src ="../web/statics/images/c4.jpg" width = "100%" height = "100%"/>   
+                    <div class="slider-img wthree-twoimg">
+                        <div class="container">
+                            <!-- <div class="slider-info">
+                                <h4>SUCCESS</h4>
+                            </div> -->
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="slider-img wthree-threeimg">
+                        <div class="container">
+                            <!-- <div class="slider-info">
+                                <h4>CREATIVE</h4>
+                            </div> -->
+                        </div>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -110,8 +109,6 @@ use yii\helpers\Url;
       <li>Example 4 callback events</li>
     </ul>-->
     </div>
-    
-
     <!-- //banner -->
     <!--about -->
     <div class="about" id="about">
@@ -193,7 +190,7 @@ use yii\helpers\Url;
 	<!--gallery-->
 	<div class="gallery" id="gallery">
 		<h3 class="title" >
-            <?= Html::a('校庆新闻',['yii-activity/index'],['style'=>'color:#922b7b'])?>
+            <?= Html::a('校庆新闻',['yii-news/index'],['style'=>'color:#922b7b'])?>
         </h3>
         <hr style="margin:10px 0 20px 0">
 		<div class="container">

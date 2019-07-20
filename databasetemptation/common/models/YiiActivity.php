@@ -18,7 +18,7 @@ use Yii;
  * @property YiiResponsible[] $yiiResponsibles
  * @property YiiWorker[] $workers
  */
-class YiiActivity extends \yii\db\ActiveRecord
+class YiiActivity extends \yii\db\ActiveRecord 
 {
     /**
      * {@inheritdoc}
